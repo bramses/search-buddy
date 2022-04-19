@@ -77,7 +77,7 @@ const fetchURLSFromBingJSON = (json) => {
 
 
 const main = async (query) => {
-    const res = await bingWebSearch('Promoting answers that are not ranked bing')
+    const res = await bingWebSearch('Where was Abraham Lincoln born?')
     console.log(fetchURLSFromBingJSON(res))
 }
 

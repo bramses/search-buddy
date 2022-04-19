@@ -10,7 +10,7 @@ const configuration = new Configuration({
 });
 
 const openai = new OpenAIApi(configuration);
-const DOC_MAX_LENGTH = 1000;
+const DOC_MAX_LENGTH = 4000;
 const DOC_MIN_LENGTH = 10;
 
 // createEmbeddings is a function that takes in two arguments
@@ -69,7 +69,7 @@ const main = async (url) => {
     const embeddingsResp = await createEmbeddings(cleanedTexts); // create embeddings
     const embeddings = embeddingsResp.data; // get the embeddings
 
-    const queryInput = ["where was lincolns son born?"];
+    const queryInput = ["How many children did Lincoln have?"];
     const queryEngine = "text-search-ada-query-001";
 
     // create embeddings for the query
@@ -103,4 +103,4 @@ const main = async (url) => {
   }
 };
 
-main("https://en.wikipedia.org/wiki/Abraham_Lincoln");
+main("https://www.history.com/this-day-in-history/abraham-lincoln-is-born");
