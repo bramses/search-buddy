@@ -1,0 +1,19 @@
+{
+  "name": "search-buddy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "compute-cosine-similarity": "^1.0.0",
+    "dotenv": "^16.0.0",
+    "node-fetch": "^3.2.3",
+    "node-html-parser": "^5.3.3",
+    "openai": "^2.0.5"
+  }
+}
