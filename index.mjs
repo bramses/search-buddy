@@ -9,6 +9,7 @@ const configuration = new Configuration({
   apiKey: process.env.OPENAI_API_KEY,
 });
 
+// testing push
 const openai = new OpenAIApi(configuration);
 const DOC_MAX_LENGTH = 4000;
 const DOC_MIN_LENGTH = 10;
